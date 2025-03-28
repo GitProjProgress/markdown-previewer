@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" type="module" defer></script>
+    <title>Markdown Previewer</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="main-heading">Markdown Previewer</h1>
+        <nav>
+            <div class="preset-sample-actions">
+                <div class="left-actions">
+                    <button class="action sample headings">
+                        <attr title="Headings"><img src="./assets/headings.svg"></attr>
+                    </button>
+                    <button class="action sample code">
+                        <attr title="Code"><img src="./assets/code.svg"></attr>
+                    </button>
+                    <button class="action sample block-quote">
+                        <attr title="Quote"><img src="./assets/quote.svg"></attr>
+                    </button>
+                    <button class="action sample highlight">
+                        <attr title=" Highlight"><img src="./assets/highlight.svg"></attr>
+                    </button>
+                    <button class="action sample list-ul">
+                        <attr title="Unordered List"><img src="./assets/ul.svg"></attr>
+                    </button>
+                    <button class="action sample list-ol">
+                        <attr title="Ordered List"><img src="./assets/ol.svg"></attr>
+                    </button>
+                    <button class="action sample links">
+                        <attr title="Link"><img src="./assets/link.svg"></attr>
+                    </button>
+                    <button class="action sample images">
+                        <attr title="Image"><img src="./assets/image.svg"></attr>
+                    </button>
+                    <button class="action sample bold">
+                        <attr title="Bold"><img src="./assets/bold.svg"></attr>
+                    </button>
+                    <button class="action sample italic">
+                        <attr title="Italic"><img src="./assets/italic.svg"></attr>
+                    </button>
+                </div>
+                <div class="right-actions">
+                    <button class="action clear">
+                        <attr title="Clear All"><img src="./assets/clear.svg"></attr>
+                    </button>
+                    <button class="action download">
+                        <attr title="Download"><img src="./assets/download.svg"></attr>
+                    </button>
+                    <button class="action save">
+                        <div class="tooltip">Saved</div>
+                        <attr title="Save"><img src="./assets/save.svg"></attr>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="md-container">
+            <textarea id="md-input" class="box md-input" name="md-input" placeholder="Enter Markdown"
+                spellcheck="false"></textarea>
+            <div class="box md-output"></div>
+        </main>
+    </div>
+</body>
+
+</html>

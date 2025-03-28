@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Spirax&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-bg: #0b1431;
+    --secondary-bg: #141f42;
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.75rem;
+    background-image: linear-gradient(to right bottom, var(--primary-bg) 20%, var(--secondary-bg));
+}
+
+.md-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.box {
+    min-height: 85vh;
+    resize: both;
+    overflow: auto;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+
+.md-input {
+    font-size: 1rem;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    background-color: #1c1f29d5;
+    padding: 1rem;
+    overflow-wrap: break-word;
+    scrollbar-color: #ff0 transparent;
+}
+
+.md-input:focus {
+    background-color: #000;
+    background-color: #111111e7;
+}
+
+.md-input::selection{
+    color: #ff7575;
+    background-color: rgb(4, 10, 61);
+}
+
+.md-output {
+    background-color: #fff ;
+    color: #000;
+    padding: 1rem 1.5rem;
+    line-height: 2.7rem;
+    scrollbar-color: rgb(100, 73, 0) transparent;
+}
+
+pre code{
+    line-height: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+.main-heading {
+    text-align: center;
+    color: #fff;
+}
+
+.preset-sample-actions {
+    background-color: #000;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.left-actions{
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.action {
+    background-color: inherit;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.action.save {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #c78100;
+    color: #fff;
+    top: -120%;
+    left: -50%;
+    display: none;
+}
+
+.tooltip.show {
+    display: block;
+}
+
+.action img {
+    height: 25px;
+}
+
+@media screen and (max-width: 780px) {
+    .main-heading {
+        font-size: 1.4rem;
+    }
+
+    .md-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .action img {
+        height: 20px;
+    }
+
+    .left-actions {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
