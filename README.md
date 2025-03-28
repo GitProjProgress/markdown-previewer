@@ -10,6 +10,7 @@
 
 - **Syntax Highlighting** for inline and multiline code blocks
 
+- **Clear Button** to reset the textarea
 - **Preset Markdown** - User can click on the preset options from the toolbar to preview sample markdown for supported markdown elements.
     ![preset markdown](https://github.com/GitProjProgress/POW/blob/main/md-previewer/Presets.JPG?raw=true)
 
